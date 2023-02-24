@@ -15,14 +15,14 @@ function upDateCity(event) {
             "h:mm:ss"
           )}<small>${cityHour.format("A")}</small>
           </div>
-        </div>`;
+        </div><a href="index.html">All cities</a>`;
 }
 function upDateTime() {
   let firstCity = document.querySelector("#city-1");
   if (firstCity) {
     let firstCityElement = firstCity.querySelector(".date");
     firstCityElement.innerHTML = moment().format("MMMM Do YYYY");
-    let cityCurrentTime = moment().tz("Europe/Lisbon");
+    let cityCurrentTime = moment().tz("Africa/Cairo");
     let CityTime = document.querySelector(".time");
     CityTime.innerHTML = cityCurrentTime.format("h:mm:ss [<small>]A[</small>]");
   }
