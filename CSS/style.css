@@ -35,6 +35,12 @@ select {
 .city:hover {
   background-color: #37319f;
 }
+
+.paris-time {
+  font-size: 35px;
+  color: aliceblue;
+  font-weight: bold;
+}
 .time {
   font-size: 35px;
   color: aliceblue;
