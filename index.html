@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <h1>World Clock</h1>
+    <div class="container" id="container">
+      <h1 class="animate__animated animate__flash">World Clock</h1>
       <select name="" id="city-selected">
         <option value="">Select a city</option>
         <option value="current">Your current location</option>
         <option value="Asia/Tokyo">Tokyo</option>
-
         <option value="America/New_York">New York</option>
         <option value="Africa/Cairo">Cairo</option>
+        <option value="Australia/Sydney">Sydney</option>
       </select>
       <div id="cities">
         <div class="city" id="city-1">
           <div>
-            <h2>Lisbon</h2>
+            <h2>Bahia</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>

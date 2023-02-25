@@ -4,14 +4,14 @@ footer {
   text-align: center;
 }
 .container {
-  background: #061848;
   width: 400px;
-  height: 500px;
+  height: 400px;
   display: block;
   margin: 0 auto;
-  border-radius: 35px;
-  box-shadow: 7px 7px 14px #a3b9c4, -7px -7px 14px #f9ffff;
   padding: 30px;
+  border-radius: 20%;
+  background: linear-gradient(145deg, #3d2f5f, #493871);
+  box-shadow: 42px 42px 84px #1b152a, -42px -42px 84px #6d53aa;
 }
 select {
   background-color: beige;
@@ -34,12 +34,19 @@ select {
 }
 .city:hover {
   background-color: #37319f;
+  transition: transform 0.3s ease;
 }
 
 .paris-time {
   font-size: 35px;
   color: aliceblue;
   font-weight: bold;
+}
+.paris-time small {
+  font-size: 15px;
+  color: aliceblue;
+  vertical-align: middle;
+  line-height: 35px;
 }
 .time {
   font-size: 35px;
@@ -55,6 +62,7 @@ select {
 
 h1 {
   color: aliceblue;
+  text-align: center;
 }
 .date {
   opacity: 0.5;
