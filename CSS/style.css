@@ -2,6 +2,7 @@
 */
 footer {
   text-align: center;
+  padding: 50px;
 }
 .container {
   width: 400px;
@@ -72,4 +73,10 @@ body {
 }
 h2 {
   margin: 0 0 10px;
+}
+.icon {
+  width: 30px;
+  color: aliceblue;
+  display: block;
+  margin: 0 auto;
 }
