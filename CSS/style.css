@@ -91,3 +91,7 @@ a {
 .source-link {
   color: #6d53aa;
 }
+button {
+  width: 25px;
+  height: 25px;
+}

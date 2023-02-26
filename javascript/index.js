@@ -42,8 +42,17 @@ function upDateTime() {
   }
 }
 
+function changeTime(event) {
+  let cityTimeZoneChange = moment().tz("America/Bahia");
+  let timeZone = document.querySelector(".time");
+  timeZone.innerHTML = cityTimeZoneChange.moment().format("H:mm:ss");
+}
+
 upDateTime();
 setInterval(upDateTime, 1000);
 
 let citiesSelect = document.querySelector("#city-selected");
 citiesSelect.addEventListener("change", upDateCity);
+
+let changeUnity = document.querySelector("button");
+changeUnity.addEventListener("click", changeTime);
