@@ -60,20 +60,11 @@ function upDateTime() {
     );
   }
 }
-let is24H = false;
-
-function changeTime(event) {
-  event.preventDefault();
-  is24H = !is24H;
-}
 
 upDateTime();
 setInterval(upDateTime, 1000);
 /**
- * Added an aventListener to the element city-selected, so whenever the user clicks on it the function upDate City is called
+ *  Selected the element "city-selected " and added an aventListener to the element city-selected, so whenever the user clicks on it the function upDate City is called
  */
 let citiesSelect = document.querySelector("#city-selected");
 citiesSelect.addEventListener("change", upDateCity);
-
-let changeUnity = document.querySelector("button");
-changeUnity.addEventListener("click", changeTime);
